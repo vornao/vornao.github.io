@@ -1,14 +1,21 @@
 (function oneko() {
     const nekoEl = document.createElement("div");
-    let nekoPosX = 32;
-    let nekoPosY = 32;
+
+    // set margin for div
+    nekoEl.style.marginTop = "15%";
+    nekoEl.style.marginLeft = "2%";
+    nekoEl.style.padding = "0px";
+
+
+    let nekoPosX = 128;
+    let nekoPosY = 128;
     let mousePosX = 0;
     let mousePosY = 0;
     let frameCount = 0;
     let idleTime = 0;
     let idleAnimation = null;
     let idleAnimationFrame = 0;
-    const nekoSpeed = 10;
+    const nekoSpeed = 15;
     const spriteSets = {
         idle: [[-3, -3]],
         alert: [[-7, -3]],
