@@ -2,10 +2,9 @@
     const nekoEl = document.createElement("div");
 
     // set margin for div
-    nekoEl.style.marginTop = "15%";
+    nekoEl.style.marginTop = "0%";
     nekoEl.style.marginLeft = "2%";
     nekoEl.style.padding = "0px";
-
 
     let nekoPosX = 128;
     let nekoPosY = 128;
