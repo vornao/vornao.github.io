@@ -2,20 +2,19 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luca Miglior's Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin:auto;
             justify-content: center;
-            height: 100vh;
+            min-height: fit-content;
+            min-width: fit-content;
             background-color: #f4f4f4;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -25,11 +24,18 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
             text-align: left;
-            width: 80%;
-            max-width: 600px;
+            max-width: 650px;
+            min-width: 650px;
             transition: background-color 0.3s, color 0.3s;
+        }
+
+        .map {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(43, 39, 39, 0.1);
         }
 
         h1,
@@ -67,7 +73,7 @@
         }
 
         .toggle-button {
-            position: absolute;
+            position: fixed;
             top: 10px;
             right: 10px;
             background: none;
@@ -90,24 +96,27 @@
     </button>
     <div class="text-container">
         <h1>Luca Miglior</h1>
-        <h3>PhD Student in Computer Science</h3>
-        <h4>University of Pisa</h4>
+        <br>
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQFFz0L_jUMLBw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724926821120?e=1741824000&v=beta&t=4xagBcFkNfHk4fDpslqtGJv4tKME_6bFedQ43bhin1g"
-            alt="Vornao's Photo" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+        alt="Luca's Photo" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+        <h2>PhD Student in Computer Science</h3>
+        <h3>University of Pisa</h4>
         <br>
     </div>
     <div class="container">
         <div style="display: flex; justify-content: space-between; margin: 10px;">
             <div style="margin: 20px;">
                 <h3>E-Mail address</h3>
-                <p><a href="mailto:luca.miglioro@phd.unipi.it">luca.miglior [at] phd.unipi.it</a></p>
+                <p><a href="mailto:luca.miglior@phd.unipi.it">luca.miglior [at] phd.unipi.it</a></p>
                 <h3>Office</h3>
                 <p>Room 304</p>
+                <em>
                 <p>Department of Computer Science</p>
                 <p>University of Pisa</p>
                 <p>Largo Bruno Pontecorvo, 3</p>
                 <p>56127, Pisa</p>
                 <p>Italy</p>
+            </em>
                 <h3>Social accounts</h3>
                 <div class="buttons" , style="display: flex; text-align: center;">
                     <a href="https://scholar.google.com/citations?user=_kuABV0AAAAJ&hl=it&authuser=1" class="scholar">
